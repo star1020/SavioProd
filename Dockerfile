@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 
 # Copy published folder into container
-COPY . .
+COPY ./API_Publish  .
 
 # Run the app
-ENTRYPOINT ["dotnet", "Savio.API.exe"]
+ENTRYPOINT ["dotnet", "Savio.API.dll"]
