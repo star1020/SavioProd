@@ -7,4 +7,4 @@ WORKDIR /app
 COPY . .
 
 # Run the app
-ENTRYPOINT ["dotnet", "Savio.API.dll"]
+ENTRYPOINT ["dotnet", "Savio.API.exe"]
