@@ -1,10 +1,11 @@
-# Use .NET 9 ASP.NET Core runtime
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
-
+# Use ASP.NET Core 9.0 runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 
-# Copy published folder into container
+# Copy published output
 COPY . .
 
-# Run the app
-ENTRYPOINT ["dotnet", "Savio.API.dll"]
+# Run the application
+ENTRYPOINT ["dotnet", "MoneyRecordWeb.dll"]
