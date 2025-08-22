@@ -1696,6 +1696,7 @@
       "Category/1.0.0": {
         "dependencies": {
           "Category.Contract": "1.0.0",
+          "Savio.Core": "1.0.0",
           "Savio.Core.Data": "1.0.0"
         },
         "runtime": {
@@ -1719,6 +1720,7 @@
       "Notification/1.0.0": {
         "dependencies": {
           "Notification.Contract": "1.0.0",
+          "Savio.Core": "1.0.0",
           "Savio.Core.Data": "1.0.0"
         },
         "runtime": {
@@ -1761,6 +1763,7 @@
       },
       "Transaction/1.0.0": {
         "dependencies": {
+          "Savio.Core": "1.0.0",
           "Savio.Core.Data": "1.0.0",
           "Transaction.Contract": "1.0.0"
         },
